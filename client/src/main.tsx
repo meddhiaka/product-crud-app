@@ -11,6 +11,7 @@ import './index.css'
 import Home from './pages/Home.tsx'
 import Product from './pages/Product.tsx'
 import Create from './pages/Create.tsx'
+import View from './pages/View.tsx'
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -18,6 +19,7 @@ const router = createBrowserRouter(
       <Route path='/' index={true} element={<Home />} />
       <Route path='/product/:productName' element={<Product />} />
       <Route path='/create' element={<Create />} />
+      <Route path='/view-unique-product/:productName' element={<View />} />
     </Route>
   )
 )

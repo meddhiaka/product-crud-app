@@ -31,7 +31,7 @@ export default function Home() {
   }
 
   return (
-    <div className="max-w-5xl mx-auto flex flex-row flex-wrap justify-center gap-2 mt-3 bg-slate-300 py-5">
+    <div className="max-w-5xl flex flex-row flex-wrap justify-center items-start mx-auto gap-2 mt-3 bg-slate-300 py-5">
       {products.map((product, index) => (
         <Card
           key={index}
