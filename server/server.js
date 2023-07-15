@@ -1,8 +1,12 @@
 import express, { response } from 'express'
 import connectDB from './database/db.js'
 import router from './route/product_route.js'
+import cors from 'cors'
 
-const app = express(), PORT = 1337
+
+const app = express(), PORT = 1337, corsOptions = { origin: 'http://localhost:5173' }
+
+app.use(cors(corsOptions));
 connectDB()
 app.use(express.json())
 app.use('/api', router)
