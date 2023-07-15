@@ -28,6 +28,7 @@ export default function Product() {
 
   return (
     <div className='max-w-5xl mx-auto'>
+        <div className=' text-3xl my-4 font-semibold'>Update a specific post</div>
         <form onSubmit={handleFormSubmit} className='px-10'>
             <div className='flex flex-col'>
                 <label className='mt-3 py-1' htmlFor="name">Product Name</label>
