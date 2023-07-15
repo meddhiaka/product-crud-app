@@ -5,6 +5,7 @@ import {Link} from 'react-router-dom'
 
 export default function Navbar() {
     const [searchBar, setSearchBar] = useState(false)
+    const [value, setValue]
     return (
         <div className={`max-w-5xl px-5 md:px-20 mx-auto ${searchBar ? 'py-1' : 'flex flex-row justify-between'}  bg-black `}>
                 <div className={`text-white mx-1 md:mx-4 py-4 ${searchBar ? 'hidden' : ''}  tracking-wider font-extrabold text-lg md:text-3xl`}><Link to="/">All Products</Link></div>
@@ -15,7 +16,7 @@ export default function Navbar() {
                     <input
                         onClick={() => setSearchBar(true)}
                         onBlur={() => setSearchBar(false)}    
-                        className="w-[6rem] sm:w-[10rem] md:w-[26rem] outline-none text-xs md:text-base appearance-none placeholder-gray-500 text-gray-500"
+                        className={` ${searchBar ? 'w-full' : 'w-[6rem] sm:w-[10rem] md:w-[26rem]'} outline-none text-xs md:text-base appearance-none placeholder-gray-500 text-gray-500`}
                         type="text"
                         placeholder="Search by product name"
                     />
