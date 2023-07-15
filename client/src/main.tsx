@@ -10,12 +10,14 @@ import {
 import './index.css'
 import Home from './pages/Home.tsx'
 import Product from './pages/Product.tsx'
+import Create from './pages/Create.tsx'
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path='/' element={<App />}>
       <Route path='/' index={true} element={<Home />} />
       <Route path='/product/:productName' element={<Product />} />
+      <Route path='/create' element={<Create />} />
     </Route>
   )
 )
