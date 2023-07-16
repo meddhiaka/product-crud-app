@@ -12,7 +12,7 @@ export default function Create() {
     async function handleFormSubmit(e) {
         e.preventDefault()
         try {
-          const response = await axios.post(`https://server-product-crud.onrender.com/api/products`, {
+          const response = await axios.post(`/api/products`, {
             productName,
             productPrice,
             quantity

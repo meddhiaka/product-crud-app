@@ -26,7 +26,7 @@ export default function Home() {
 
   async function handleRemoveProduct(productName) {
     try {
-      await axios.delete(`https://server-product-crud.onrender.com/api/products/${productName}`)
+      await axios.delete(`/api/products/${productName}`)
       setProducts((prevProducts) =>
         prevProducts.filter((product) => product.productName !== productName)
       )
