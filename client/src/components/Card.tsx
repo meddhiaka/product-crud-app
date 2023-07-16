@@ -24,7 +24,7 @@ export default function Card(props) {
       </p>
       <div className="w-full flex flex-row justify-center gap-x-2 mt-3">
         <div className="cursor-pointer rounded-md text-slate-900 font-bold py-1 px-2 w-[40%] text-center bg-slate-500">
-          <Link to={`http://localhost:5173/product/${props.productName}`}>
+          <Link to={`/product/${props.productName}`}>
             Edit
           </Link>
         </div>

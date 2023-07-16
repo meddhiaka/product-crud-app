@@ -8,7 +8,7 @@ export default function Navbar({ setResultsSearch }) {
   const [input, setInput] = useState('')
 
     async function fetchData(v) {
-      const response = await axios.get('http://localhost:1337/api/products/')
+      const response = await axios.get('https://product-crud-app-axbw.onrender.com/api/products/')
       const results = response.data.res.filter(e => {
         return v && e && e.productName && e.productName.toLowerCase().includes(v)
       })
