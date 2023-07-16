@@ -5,8 +5,11 @@ import cors from 'cors'
 
 
 const app = express(), PORT = 1337, corsOptions = { origin: 'http://localhost:5173' }
-
-app.use(cors(corsOptions));
+app.use(function(req, res, next) {
+    res.setHeader('Access-Control-Allow-Origin', '*')
+    next()
+  })
+app.use(cors(corsOptions))
 connectDB()
 app.use(express.json())
 app.use('/api', router)
