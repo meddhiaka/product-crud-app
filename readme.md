@@ -1,5 +1,11 @@
 # Product CRUD Application 🛠️
 
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/meddhiaka/product-crud-app/main/demo.gif" alt="ALT_TEXT">
+</p>
+
+
 #### Confdelis Company's mini project is to develop a user-friendly MERN stack application for managing product records efficiently.
 
 #### It will enable users to register, modify, display, delete, and search products with ease.
