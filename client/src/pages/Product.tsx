@@ -13,7 +13,7 @@ export default function Product() {
   async function handleFormSubmit(e) {
     e.preventDefault()
     try {
-      const response = await axios.put(`https://product-crud-app-axbw.onrender.com/api/products/${x}`, {
+      const response = await axios.put(`https://server-product-crud.onrender.com/api/products/${x}`, {
         productName,
         productPrice,
         quantity

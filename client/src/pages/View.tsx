@@ -8,7 +8,7 @@ export default function Product(props) {
 
     useEffect(() => {
         async function fetchProduct() {
-            const response = await axios.get(`https://product-crud-app-axbw.onrender.com/api/products/${x}`)
+            const response = await axios.get(`https://server-product-crud.onrender.com/api/products/${x}`)
             setProduct(response.data.res)
         }
 

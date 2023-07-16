@@ -9,7 +9,7 @@ export default function Home() {
   useEffect(() => {
     async function fetchProducts() {
       try {
-        const res = await axios.get("https://product-crud-app-axbw.onrender.com/api/products", {
+        const res = await axios.get("https://server-product-crud.onrender.com/api/products", {
           headers: {
             'Content-Type': 'application/json;charset=UTF-8',
             'Access-Control-Allow-Origin': '*'
@@ -26,7 +26,7 @@ export default function Home() {
 
   async function handleRemoveProduct(productName) {
     try {
-      await axios.delete(`https://product-crud-app-axbw.onrender.com/api/products/${productName}`)
+      await axios.delete(`https://server-product-crud.onrender.com/api/products/${productName}`)
       setProducts((prevProducts) =>
         prevProducts.filter((product) => product.productName !== productName)
       )
